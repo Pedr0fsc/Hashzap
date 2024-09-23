@@ -15,6 +15,6 @@ def homepage():
     return render_template("homepage.html")
 
 # roda o nosso aplicativo
-socketio.run(app, host="192.168.0.12")
+socketio.run(app, host="0.0.0.0", port=5000)
 
 # websocket
